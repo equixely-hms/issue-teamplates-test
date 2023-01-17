@@ -1,5 +1,5 @@
 ---
-name: 💡 New feature
+name: 💡 Shold be implemented
 about: Create a new ticket for a new feature creation
 title: ''
 labels: 'enhancement'
