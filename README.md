@@ -40,6 +40,8 @@ package audit
 - https://go.dev/doc/effective_go
 - https://pkg.go.dev/errors
 
+inside "https://go.dev/doc/effective_go" you can find:
+
 >  Similarly, the function to make new instances of ring.Ring—which is the definition of a constructor in Go—would normally be called NewRing, but since Ring is the only type exported by the package, and since the package is called ring, it's called just New, which clients of the package see as ring.New. Use the package structure to help you choose good names.
 
 ### benefits
