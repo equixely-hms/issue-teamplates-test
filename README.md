@@ -101,18 +101,18 @@ b := bookRepo.New()
 ```
 ## Project Layout
 
-### sources
+### Sources
 - https://github.com/evrone/go-clean-template
 - https://github.com/golang-standards/project-layout
 
 
-### Use standard Go Project Layout
+### Use standard Go Project Layout ⚠️
 
 - `📁repo`, `📁entities` and  `📁usecase` shold probably be placed in a single folder (`📁internal`).
 - maybe `📁cmd/go-engine-equixely/cmd` in a top level `📁init` folder
 - maybe `📁infratructure` e `📁utils` in a `📁pkg` folder 
 
-### Renaming
+### Renaming ⚠️
 
 `📁entities` should be renamed `📁entity`to follow the `go-clean-template` naming scheme
 
