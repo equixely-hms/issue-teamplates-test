@@ -10,11 +10,11 @@ the issue template can be found here:
 
 ## Static constructors ⚠️
 
-### summary
+### Summary
 
 change static constructors from containing the struct name to only be `New`
 
-### examples
+### Examples
 ```diff
 package audit
 
@@ -36,7 +36,7 @@ package audit
 +func New() (db *gorm.DB) *Repository{}
 ```
 
-### sources
+### Sources
 - https://go.dev/doc/effective_go
 - https://pkg.go.dev/errors
 
@@ -44,7 +44,7 @@ inside "https://go.dev/doc/effective_go" you can find:
 
 >  Similarly, the function to make new instances of ring.Ring—which is the definition of a constructor in Go—would normally be called NewRing, but since Ring is the only type exported by the package, and since the package is called ring, it's called just New, which clients of the package see as ring.New. Use the package structure to help you choose good names.
 
-### benefits
+### Benefits
 
 - forces to choose good names for the namespaces (ex: `auditRepo` for the repositories)
 
@@ -56,15 +56,15 @@ inside "https://go.dev/doc/effective_go" you can find:
     auditrepo.NewRepository(...)
     ```
 
-    If `audituc` is not explicit enough i would suggest to change it to `auditUseCase`, the same goes for `auditrepo`
+    If `audituc` is not explicit enough I would suggest to change it to `auditUseCase`, the same goes for `auditrepo`
 
 ## UseCases and Repositories structs ⚠️
 
-### summary
+### Summary
 
-naming `Repository` each  `Repository` structs gives no insights about the type of repo and the cost of explicitly insert the `entity` name inside it is zero.
+Naming `Repository` each  `Repository` structs gives no insights about the type of repo and the cost of explicitly insert the `entity` name inside it is zero.
 
-### example
+### Example
 
 ```diff
 package audit
@@ -76,12 +76,12 @@ package audit
 
 ```
 
-### sources
+### Sources
 - https://github.com/evrone/go-clean-template
 
-### benefits
+### Benefits
 
-naming each repos struct `Repository` gives no information about the repository to the client.
+Naming each repos struct `Repository` gives no information about the repository to the client.
 
 ex:
 
@@ -104,7 +104,7 @@ b := bookRepo.New()
 - maybe `📁cmd/go-engine-equixely/cmd` in a top level `📁init` folder
 - maybe `📁infratructure` e `📁utils` in a `📁pkg` folder 
 
-### renaming
+### Renaming
 
 `📁entities` should be renamed `📁entity`to follow the `go-clean-template` naming scheme
 
