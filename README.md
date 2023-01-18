@@ -56,7 +56,15 @@ inside "https://go.dev/doc/effective_go" you can find:
     auditrepo.NewRepository(...)
     ```
 
-    If `audituc` is not explicit enough I would suggest to change it to `auditUseCase`, the same goes for `auditrepo`
+    If `audituc` is not explicit enough I would suggest to change it to `auditUseCase`, the same goes for `auditrepo`.
+
+    The result would be:
+
+    ```go
+    auditUseCase.New(...)
+    //or
+    auditRepositoy.New(...)
+    ```
 
 ## UseCases and Repositories structs ⚠️
 
