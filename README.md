@@ -91,6 +91,11 @@ b := bookRepo.New()
 ```
 ## Project Layout
 
+### sources
+- https://github.com/evrone/go-clean-template
+- https://github.com/golang-standards/project-layout
+
+
 ### Use standard Go Project Layout
 
 - `📁repo`, `📁entities` and  `📁usecase` shold probably be placed in a single folder (`📁internal`).
@@ -99,7 +104,7 @@ b := bookRepo.New()
 
 ### renaming
 
-`📁entities` should be renamed `📁entity`to follow the https://github.com/evrone/go-clean-template naming scheme
+`📁entities` should be renamed `📁entity`to follow the `go-clean-template` naming scheme
 
 ## `📃repository/audit/common_test`
 
